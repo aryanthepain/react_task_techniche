@@ -7,7 +7,15 @@
 }
 .htitle{
     background: transparent;
+    color: white;
+}
+.hsub{
+    color: white;
 }
 .home{
     background: linear-gradient(180deg, #2456AB 0%, #1A3B77 100%);
+}
+.homecontainer{
+    margin-left: 10%;
+    margin-right: 40%;
 }
