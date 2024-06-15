@@ -1,3 +1,5 @@
 navbar- sign up, sign in pop up box
 
+home form data using api json server
+
 https://www.figma.com/design/jg1GrRlK0oXROW2KfzKz9G/Real-Estate-(Community)?node-id=0%3A1&t=SkFe18MrOAwIxEEX-1

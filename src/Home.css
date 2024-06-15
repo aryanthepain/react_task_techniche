@@ -4,6 +4,7 @@
     background-image: url(./icons/home_bg.png);
     background-position: bottom right;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 .htitle{
     background: transparent;
@@ -11,6 +12,7 @@
 }
 .hsub{
     color: white;
+    margin-bottom: 20px;
 }
 .home{
     background: linear-gradient(180deg, #2456AB 0%, #1A3B77 100%);
@@ -18,4 +20,38 @@
 .homecontainer{
     margin-left: 10%;
     margin-right: 40%;
+    padding-top: 40px;
+}
+
+/* form */
+.hform{
+    background-color: white;
+    padding: 10px;
+}
+.homeform{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.fdivs{
+    flex-grow: 1;
+    padding-inline: 10px;
+}
+.fprice{
+    border-left: 1px;
+    border-color: gray;
+}
+.fdivs > label{
+    display: block  ;
+}
+.fdivs > select{
+    background-color: transparent;
+    border: 0;
+    appearance: none;
+}
+.fdivs > svg{
+    align-self: flex-end;
+}
+.fdivs > select > option{
+    padding-left: 0%;
 }
