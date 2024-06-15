@@ -9,6 +9,7 @@
 .htitle{
     background: transparent;
     color: white;
+    font-size: 50px;
 }
 .hsub{
     color: white;
@@ -48,10 +49,43 @@
     background-color: transparent;
     border: 0;
     appearance: none;
+    padding-inline: 5px;
+    padding-block: 2px;
+    transition: 0.3s;
 }
-.fdivs > svg{
-    align-self: flex-end;
+.fdivs > select:hover{
+    background-color: gray;
 }
 .fdivs > select > option{
     padding-left: 0%;
+}
+.fsubmit>button{
+    border: 0;
+    background-color: transparent;
+    transition: 0.3s;
+    padding-top: 5px;
+}
+.fsubmit>button:hover{
+    background-color: gray;
+}
+
+/* logos */
+.hstats{
+    display: flex;
+    padding-block: 50px;
+}
+.hslogo{
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75px;
+    height: 75px;
+    padding-block: auto;
+    margin-inline: 2%;
+}
+.hslogo>p{
+    margin-block: 5px;
 }
