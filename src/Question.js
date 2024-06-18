@@ -1,4 +1,4 @@
-// import './ques.css';
+import './ques.css';
 
 const Question = () => {
   return (
@@ -25,8 +25,8 @@ const Question = () => {
           <div className="quesform">
               <p className="qftitle">Any Question?</p>
               <form className="qform">
-                  <input type="email" name="" id="" placeholder="Enter your email here" className="qfemail" />
-                  <input type="text" name="" id="" placeholder="Enter your question here" className="qfques" />
+                  <input type="email" placeholder="Enter your email here" className="qfemail" required/>
+                  <textarea placeholder="Enter your question here" className='qfques' required></textarea>
                   <input type="submit" value="SEND" className="qfsubmit" />
               </form>
           </div>
