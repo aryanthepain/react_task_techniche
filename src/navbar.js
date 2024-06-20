@@ -2,6 +2,10 @@ import './navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+    const ScrollTop = () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+
     return (
         <nav className="navbar">
             <div className="logo">
@@ -13,10 +17,10 @@ const Navbar = () => {
             
             <div className="nlink">
                 <ul className="links">
-                <li><Link to="/" className="lhome">HOME</Link></li>
-                    <li><Link to="/services" className="lservices">SERVICES</Link></li>
-                    <li><Link to="/sell" className="lsell">SELL</Link></li>
-                    <li><Link to="/rent" className="lrent">RENT</Link></li>
+                    <li><Link to="/" className="lhome" onClick={ScrollTop}>HOME</Link></li>
+                    <li><Link to="/services" className="lservices" onClick={ScrollTop}>SERVICES</Link></li>
+                    <li><Link to="/sellorrent/sell" className="lsell" onClick={ScrollTop}>SELL</Link></li>
+                    <li><Link to="/sellorrent/rent" className="lrent" onClick={ScrollTop}>RENT</Link></li>
                 </ul>
             </div>
 

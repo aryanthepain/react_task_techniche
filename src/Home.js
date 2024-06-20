@@ -1,8 +1,10 @@
 import './Home.css';
 import Select from "react-select";
+import Services from './Services';
 
 const Home = () => {
     return (
+        <div>
         <div className="home">
         <div className="hbg">
         <div className="homecontainer">
@@ -70,6 +72,10 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        </div>
+        </div>
+        <div className="hello">
+            <Services />
         </div>
         </div>
     );

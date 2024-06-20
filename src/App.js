@@ -4,6 +4,7 @@ import Services from "./Services";
 import Question from "./Question";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./Footer";
+import Sellform from "./Sellform";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
         <Route index element={<Home />} />
         <Route path="services" element={<Services />} />
+        <Route path="sellorrent/:sell" element={<Sellform />} />
         </Routes>
       </div>
       <Question />
