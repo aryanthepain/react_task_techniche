@@ -1,0 +1,61 @@
+.services{
+    text-align: center;
+    background-color: #ECF4FD;
+    padding-block: 5%;
+    padding-inline: 10%;
+}
+.stitle{
+    color: #295FB7;
+}
+.soptions{
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+}
+.sitem{
+    margin-inline: 20px;
+    background-color: white;
+    padding-inline: 3%;
+    padding-block: 3%;
+    height: 100%;
+    transition: 0.3s;
+    flex-grow: 1;
+}
+.sitem:hover{
+    background-color: #295FB7;
+}
+.sitem:hover .siimg{
+    background-color: white;
+    transition: 0.3s;
+}
+.sitem:hover .siisvg{
+    color: #295FB7;
+}
+.sitem:hover .sititle{
+    color: white;
+}
+.sitem:hover .sisub{
+    color: white;
+}
+.sisub{
+    transition: 0.3s;
+}
+.siisvg{
+    color: white;
+    transition: 0.3s;
+}
+.sititle{
+    color: #295FB7;
+    font-weight: 600;
+    font-size: 150%;
+    transition: 0.3s;
+}
+.siimg{
+    width: 90px;
+    height: 90px;
+    display: inline-flex;
+    align-items: center ;
+    justify-content: space-around;
+    background-color: #295FB7;
+    border-radius: 100%;
+}
