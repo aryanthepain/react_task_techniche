@@ -25,8 +25,8 @@ const Question = () => {
           <div className="quesform">
               <p className="qftitle">Any Question?</p>
               <form className="qform">
-                  <input type="email" placeholder="Enter your email here" className="qfemail" required/>
-                  <textarea placeholder="Enter your question here" className='qfques' required></textarea>
+                  <input type="email" placeholder="Enter your email here" className="qfemail" required id='qfemail' />
+                  <textarea placeholder="Enter your question here" className='qfques' id='qfques' required></textarea>
                   <input type="submit" value="SEND" className="qfsubmit" />
               </form>
           </div>
