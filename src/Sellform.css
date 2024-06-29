@@ -21,8 +21,8 @@
 .sform>div{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 .sform>div>div{
     display: flex;
@@ -45,6 +45,8 @@
 
 .sfsellrent{
     background-color: #295FB7;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 .sffeaturehead{
     margin-top: 20px;

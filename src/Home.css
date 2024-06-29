@@ -47,11 +47,11 @@
 }
 .fdivs > select{
     background-color: transparent;
-    border: 0;
     appearance: none;
     padding-inline: 5px;
     padding-block: 2px;
     transition: 0.3s;
+    border-radius: 5px;
 }
 .fdivs > select:hover{
     background-color: gray;
