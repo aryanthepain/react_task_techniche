@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import './Sellform.css';
 
 const Sellform = () => {
     const [isRent, SetIsRent] = useState(false);
@@ -32,7 +33,6 @@ const Sellform = () => {
     const [address, setAddress] = useState('');
     const [type, setType] = useState('');
     const [price, setPrice] = useState('');
-    const [currency, setCurrency] = useState('');
     const [bed, setBed] = useState('');
     const [bath, setBath] = useState('');
     const [area, setArea] = useState('');
@@ -90,46 +90,78 @@ const Sellform = () => {
             <div className="sfcontainer">
                 <form className="sform" name="sellform" onSubmit={handleSubmit} id="sellform">
                     <div className="sfsellrent">
+                        <div>
                         <input type="radio" name="sellrent" value={"sell"} id="sell" defaultChecked onClick={handleSellRent} />
                         <label htmlFor="sell">Sell</label>
+                        </div>
+                        <div>
                         <input type="radio" name="sellrent" value={"rent"} id="rent" onClick={handleSellRent}/>
                         <label htmlFor="rent">Rent</label>
+                        </div>
                     </div>
-                    <label className="sflabel" htmlFor="sfaddress">Property Address</label>
-                    <input type="text" className="sfinput" required id="sfaddress" onChange={(e) => setAddress(e.target.value)} />
-                    <label className="sflabel" htmlFor="sftype">Property type</label>
-                    <input type="text" className="sfinput"  required id="sftype" onChange={(e) => setType(e.target.value)} />
-                    {!isRent && <label className="sflabel" htmlFor="sfprice">Price</label>}
-                    {!isRent && <input type="number" className="sfinput"  required id="sfprice" onChange={(e) => setPrice(e.target.value)} />}
-                    {isRent && <label className="sflabel" htmlFor="sfrent">Rent per Month</label>}
-                    {isRent && <input type="number" className="sfinput" required id="sfrent" onChange={(e) => setPrice(e.target.value)} /> }
-                    {/* react select for currency*/}
+                    <div>
+                    <div>
+                        <label className="sflabel" htmlFor="sfaddress">Property Address</label>
+                        <input type="text" className="sfinput" required id="sfaddress" onChange={(e) => setAddress(e.target.value)} />
+                    </div>
+                    <div>
+                        <label className="sflabel" htmlFor="sftype">Property type</label>
+                        <input type="text" className="sfinput"  required id="sftype" onChange={(e) => setType(e.target.value)} />
+                    </div>
+                    <div>
+                        {!isRent && <label className="sflabel" htmlFor="sfprice">Price(in INR)</label>}
+                        {isRent && <label className="sflabel" htmlFor="sfrent">Rent per Month(in INR)</label>}
+                        <input type="number" className="sfinput"  required id="sfprice" onChange={(e) => setPrice(e.target.value)} />
+                    </div>
+                    </div>
 
-                    <label className="sflabel" htmlFor="sfmimg">Upload property image</label>
-                    <input type="file" className="sfuimg" accept="image/*" required id="sfmimg" />
+                    <div className="sfmainimgdiv">
+                    <div>
+                        <label className="sflabel" htmlFor="sfmimg">Upload property image</label>
+                        <input type="file" className="sfuimg" accept="image/*" required id="sfmimg" />
+                    </div>
+                    </div>
 
-                    <label className="sflabel" htmlFor="sfbed">Number of bedrooms</label>
-                    <input type="number" className="sfinput" required id="sfbed" onChange={(e) => setBed(e.target.value)} />
-                    <label className="sflabel" htmlFor="sfbath">Number of bathrooms</label>
-                    <input type="number" className="sfinput" id="sfbath" required onChange={(e) => setBath(e.target.value)} />
-                    <label className="sflabel" htmlFor="sfarea">Home area (in m^2)</label>
-                    <input type="number" className="sfinput" id="sfarea" required onChange={(e) => setArea(e.target.value)} />
+                    <div className="sfdetaildiv">
+                        <div>
+                        <label className="sflabel" htmlFor="sfbed">Number of bedrooms</label>
+                        <input type="number" className="sfinput" required id="sfbed" onChange={(e) => setBed(e.target.value)} />
+                        </div>
+                        <div>
+                        <label className="sflabel" htmlFor="sfbath">Number of bathrooms</label>
+                        <input type="number" className="sfinput" id="sfbath" required onChange={(e) => setBath(e.target.value)} />
+                        </div>
+                        <div>
+                        <label className="sflabel" htmlFor="sfarea">Home area (in m^2)</label>
+                        <input type="number" className="sfinput" id="sfarea" required onChange={(e) => setArea(e.target.value)} />
+                        </div>
+                    </div>
 
+
+                    <div className="sffeaturehead">
                     <label className="sflabel" htmlFor="sfimg1">Features(upload some more pictures)</label>
+                    </div>
+                    <div>
+                    <div>
+                        <label className="sflabel" htmlFor="sff1">Feature 1</label>
+                        <input type="text" id="sff1" className="sfinput" required onChange={(e) => setf1(e.target.value)} />
+                        <input type="file" required accept="image/*" id="sfimg1" />
+                    </div>
 
-                    <label className="sflabel" htmlFor="sff1">Feature 1</label>
-                    <input type="text" id="sff1" className="sfinput" required onChange={(e) => setf1(e.target.value)} />
-                    <input type="file" required accept="image/*" id="sfimg1" />
+                    <div>
+                        <label className="sflabel" htmlFor="sff2">Feature 2</label>
+                        <input type="text" id="sff2" className="sfinput" required onChange={(e) => setf2(e.target.value)} />
+                        <input type="file" required accept="image/*" id="sfimg2" />
+                    </div>
 
-                    <label className="sflabel" htmlFor="sff2">Feature 2</label>
-                    <input type="text" id="sff2" className="sfinput" required onChange={(e) => setf2(e.target.value)} />
-                    <input type="file" required accept="image/*" id="sfimg2" />
+                    <div>
+                        <label className="sflabel" htmlFor="sff3">Feature 3</label>
+                        <input type="text" id="sff3" className="sfinput" required onChange={(e) => setf3(e.target.value)} />
+                        <input type="file" required accept="image/*" id="sfimg3" />
+                    </div>
+                    </div>
 
-                    <label className="sflabel" htmlFor="sff3">Feature 3</label>
-                    <input type="text" id="sff3" className="sfinput" required onChange={(e) => setf3(e.target.value)} />
-                    <input type="file" required accept="image/*" id="sfimg3" />
-
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" className="sfsubmit" />
                 </form>
             </div>
         </div>
