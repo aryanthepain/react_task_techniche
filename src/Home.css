@@ -1,91 +1,91 @@
-.hbg{
-    width: 100%;
-    height: 100%;
-    background-image: url(./icons/home_bg.png);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: contain;
+.hbg {
+  width: 100%;
+  height: 100%;
+  background-image: url(./icons/home_bg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.htitle{
-    background: transparent;
-    color: white;
-    font-size: 50px;
+.htitle {
+  background: transparent;
+  color: white;
+  font-size: 50px;
 }
-.hsub{
-    color: white;
-    margin-bottom: 20px;
+.hsub {
+  color: white;
+  margin-bottom: 20px;
 }
-.home{
-    background: linear-gradient(180deg, #2456AB 0%, #1A3B77 100%);
+.home {
+  background: linear-gradient(180deg, #2456ab 0%, #1a3b77 100%);
 }
-.homecontainer{
-    margin-left: 10%;
-    margin-right: 40%;
-    padding-top: 40px;
+.homecontainer {
+  margin-left: 10%;
+  margin-right: 40%;
+  padding-top: 40px;
 }
 
 /* form */
-.hform{
-    background-color: white;
-    padding: 10px;
+.hform {
+  background-color: white;
+  padding: 10px;
 }
-.homeform{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+.homeform {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
-.fdivs{
-    flex-grow: 1;
-    padding-inline: 10px;
+.fdivs {
+  flex-grow: 1;
+  padding-inline: 10px;
 }
-.fprice{
-    border-left: 1px;
-    border-color: gray;
+.fprice {
+  border-left: 1px;
+  border-color: gray;
 }
-.fdivs > label{
-    display: block  ;
+.fdivs > label {
+  display: block;
 }
-.fdivs > select{
-    background-color: transparent;
-    appearance: none;
-    padding-inline: 5px;
-    padding-block: 2px;
-    transition: 0.3s;
-    border-radius: 5px;
+.fdivs > select {
+  background-color: transparent;
+  appearance: none;
+  padding-inline: 5px;
+  padding-block: 2px;
+  transition: 0.3s;
+  border-radius: 5px;
 }
-.fdivs > select:hover{
-    background-color: gray;
+.fdivs > select:hover {
+  background-color: gray;
 }
-.fdivs > select > option{
-    padding-left: 0%;
+.fdivs > select > option {
+  padding-left: 0%;
 }
-.fsubmit>button{
-    border: 0;
-    background-color: transparent;
-    transition: 0.3s;
-    padding-top: 5px;
+.fsubmit > button {
+  border: 0;
+  background-color: transparent;
+  transition: 0.3s;
+  padding-top: 5px;
 }
-.fsubmit>button:hover{
-    background-color: gray;
+.fsubmit > button:hover {
+  background-color: gray;
 }
 
 /* logos */
-.hstats{
-    display: flex;
-    padding-block: 50px;
+.hstats {
+  display: flex;
+  padding-block: 50px;
 }
-.hslogo{
-    background-color: white;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 75px;
-    height: 75px;
-    padding-block: auto;
-    margin-inline: 2%;
+.hslogo {
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 75px;
+  height: 75px;
+  padding-block: auto;
+  margin-inline: 2%;
 }
-.hslogo>p{
-    margin-block: 5px;
+.hslogo > p {
+  margin-block: 5px;
 }
