@@ -1,0 +1,86 @@
+/* top */
+.sale {
+  text-align: center;
+}
+h1 {
+  color: #2455a9;
+  margin-bottom: 3px;
+}
+.sasub {
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+/* grid */
+.sagrid {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  overflow-x: hidden;
+  margin-inline: 4%;
+  grid-template-rows: auto;
+}
+.saglinkcont {
+  background-color: #ecf4fd;
+  padding: 10px;
+}
+/* prettier-ignore */
+.nounder, .saglink  {
+  color: black;
+  text-decoration: none;
+}
+/* image */
+.sagdiv {
+  overflow: hidden;
+  padding: 6px;
+}
+.sagimgdiv {
+  overflow: hidden;
+}
+.sagdimg {
+  object-fit: scale-down;
+  max-width: 100%;
+}
+
+/* top details */
+/* prettier-ignore */
+.sagprice, .sagadd, .sagrent {
+  text-align: left;
+}
+.sagrent {
+  color: #ffac33;
+}
+
+/* details */
+.sagddetails {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.sagddticon {
+  margin-right: 5px;
+}
+.sagddbottom {
+  margin-top: 4px;
+  vertical-align: bottom;
+}
+.sagddmid {
+  padding-inline: 5px;
+}
+
+/* hover */
+.saglinkcont:hover {
+  background-color: #295eb5;
+}
+/* prettier-ignore */
+.saglinkcont:hover .sagddetails, .saglinkcont:hover .sagadd,.saglinkcont:hover .sagprice{
+  filter: invert(1);
+}
+
+/* more */
+.samore {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  color: #2455a9;
+}
