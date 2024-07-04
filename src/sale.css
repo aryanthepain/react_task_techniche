@@ -20,7 +20,6 @@ h1 {
   grid-template-rows: auto;
 }
 .saglinkcont {
-  background-color: #ecf4fd;
   padding: 10px;
 }
 /* prettier-ignore */
@@ -31,7 +30,9 @@ h1 {
 /* image */
 .sagdiv {
   overflow: hidden;
-  padding: 6px;
+  margin: 6px;
+  background-color: #ecf4fd;
+  padding: 8px;
 }
 .sagimgdiv {
   overflow: hidden;
@@ -56,6 +57,7 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: left;
+  vertical-align: bottom;
 }
 .sagddticon {
   margin-right: 5px;
@@ -69,11 +71,11 @@ h1 {
 }
 
 /* hover */
-.saglinkcont:hover {
+.sagdiv:hover {
   background-color: #295eb5;
 }
 /* prettier-ignore */
-.saglinkcont:hover .sagddetails, .saglinkcont:hover .sagadd,.saglinkcont:hover .sagprice{
+.sagdiv:hover .sagddetails, .sagdiv:hover .sagadd,.sagdiv:hover .sagprice{
   filter: invert(1);
 }
 
