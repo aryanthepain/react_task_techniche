@@ -1,8 +1,8 @@
-.foot{
-    justify-content: center;
-    display: flex;
-    padding-bottom: 30px
+.foot {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 30px;
 }
-footer > nav > div.sign{
-    display: none;
+footer > nav > div.sign {
+  display: none;
 }

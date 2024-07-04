@@ -1,75 +1,75 @@
-.sellform{
-    background-color: #295FB7;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.sellform {
+  background-color: #295fb7;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.sftitle{
-    color: white;
-    margin-top: 0;
+.sftitle {
+  color: white;
+  margin-top: 0;
 }
-.sfcontainer{
-    background-color: white;
-    padding: 30px;
-}
-
-#sfmimg{
-    background-color: white;
-}
-.sform>div{
-    display: flex;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-.sform>div>div{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3px;
-    background-color: #295FB7;
-    color: white;
-    padding: 5px;
-    padding-left: 8px;
-    padding-right: 0;
-    border-radius: 8px;
-}
-.sfinput{
-    border: 0;
-    margin-inline: 10px;
-    padding-inline: 5px;
-    padding-block: 3px;
-    border-radius: 5px;
+.sfcontainer {
+  background-color: white;
+  padding: 30px;
 }
 
-.sfsellrent{
-    background-color: #295FB7;
-    justify-content: center;
-    margin-bottom: 5px;
+#sfmimg {
+  background-color: white;
 }
-.sffeaturehead{
-    margin-top: 20px;
+.sform > div {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.sform > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  background-color: #295fb7;
+  color: white;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 0;
+  border-radius: 8px;
+}
+.sfinput {
+  border: 0;
+  margin-inline: 10px;
+  padding-inline: 5px;
+  padding-block: 3px;
+  border-radius: 5px;
 }
 
-#sfmimg{
-    background-color: transparent;
-    padding-left: 6px;
+.sfsellrent {
+  background-color: #295fb7;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.sffeaturehead {
+  margin-top: 20px;
 }
 
-.sfsubmit{
-    background-color: #295FB7;
-    color: white;
-    font-size: larger;
-    margin: 10px;
-    margin-bottom: 0;
-    padding: 10px;
-    border-radius: 8px;
-    transition: 0.3s;
-    border-color: transparent;
+#sfmimg {
+  background-color: transparent;
+  padding-left: 6px;
 }
-.sfsubmit:hover{
-    border-color: black;
-    background-color: #295FB799;
-    color: black;
+
+.sfsubmit {
+  background-color: #295fb7;
+  color: white;
+  font-size: larger;
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+  border-color: transparent;
+}
+.sfsubmit:hover {
+  border-color: black;
+  background-color: #295fb799;
+  color: black;
 }

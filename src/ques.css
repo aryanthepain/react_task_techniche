@@ -1,96 +1,97 @@
-.quescontainer{
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 10%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)), url('./icons/r-architecture-KQPEhYweLrQ-unsplash\ 2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    padding-block: 5%;
+.quescontainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./icons/r-architecture-KQPEhYweLrQ-unsplash\ 2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-block: 5%;
 }
 
-.qtext{
-    color: white;
-    padding-inline: 5%;
+.qtext {
+  color: white;
+  padding-inline: 5%;
 }
-.qttitle{
-    font-size: 200%;
-    font-weight: 700;
+.qttitle {
+  font-size: 200%;
+  font-weight: 700;
 }
-.nounder{
-    text-decoration: none;
+.nounder {
+  text-decoration: none;
 }
-.qtcslinka{
-    color: white;
-    transition: 0.3s;
+.qtcslinka {
+  color: white;
+  transition: 0.3s;
 }
-.qtcslinka:hover{
-    text-decoration: underline;
+.qtcslinka:hover {
+  text-decoration: underline;
 }
 
 /* list icons */
-.qtccl1{
-    list-style-image: url('./icons/location.svg');
+.qtccl1 {
+  list-style-image: url("./icons/location.svg");
 }
-.qtccl2{
-    list-style-image: url('./icons/tele.svg');
+.qtccl2 {
+  list-style-image: url("./icons/tele.svg");
 }
-.qtccl3{
-    list-style-image: url('./icons/mail.svg');
+.qtccl3 {
+  list-style-image: url("./icons/mail.svg");
 }
-.qtcs1{
-    list-style-image: url('./icons/insta.svg');
+.qtcs1 {
+  list-style-image: url("./icons/insta.svg");
 }
-.qtcs2{
-    list-style-image: url('./icons/twitter.svg');
+.qtcs2 {
+  list-style-image: url("./icons/twitter.svg");
 }
-.qtcs3{
-    list-style-image: url('./icons/facebook.svg');
+.qtcs3 {
+  list-style-image: url("./icons/facebook.svg");
 }
-.qtcs1::marker{
-    display: grid;
-    align-items: center;
+.qtcs1::marker {
+  display: grid;
+  align-items: center;
 }
 
 /* form css */
-.quesform{
-    background-color: white;
-    padding-inline: 5%;
-    padding-block: 3%;
-    display: flex;
-    flex-direction: column;
+.quesform {
+  background-color: white;
+  padding-inline: 5%;
+  padding-block: 3%;
+  display: flex;
+  flex-direction: column;
 }
-.qftitle{
-    color: #295FB7;
-    font-size: 200%;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 0;
+.qftitle {
+  color: #295fb7;
+  font-size: 200%;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
 }
-.qform{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
+.qform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
-.qfemail, .qfques{
-    border: 0;
-    background-color: #d0d0d0;
-    padding-inline: 10px;
-    padding-block: 10px;
-    margin-block: 10px;
-    color: black;
+.qfemail,
+.qfques {
+  border: 0;
+  background-color: #d0d0d0;
+  padding-inline: 10px;
+  padding-block: 10px;
+  margin-block: 10px;
+  color: black;
 }
-.qfques{
-    flex-grow: 1;
-    resize: none;
+.qfques {
+  flex-grow: 1;
+  resize: none;
 }
-.qfsubmit{
-    color: white;
-    background-color: #295FB7;
-    margin-block: 10px;
-    padding-block: 10px;
-    border: 0;
+.qfsubmit {
+  color: white;
+  background-color: #295fb7;
+  margin-block: 10px;
+  padding-block: 10px;
+  border: 0;
 }

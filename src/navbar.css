@@ -1,74 +1,74 @@
-.navbar{
-    display: flex;
-    /* width: 100%; */
-    justify-content: space-around;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    padding-block: 30px;
-    background-color: white;
+.navbar {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-around;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-block: 30px;
+  background-color: white;
 }
 
-.logo{
-    display: flex;
-    /* padding: 10.8px; */
+.logo {
+  display: flex;
+  /* padding: 10.8px; */
 }
-.title{
-    display: inline;
-    padding: 20px;
-    color: rgba(41, 95, 183, 1);
-    padding: 0%;
-    margin: 0;
-    padding-inline-start: 20px;
-}
-
-ul.links{
-    padding: 0;
-    margin: 0%;
-}
-.nlink{
-    margin-block: auto;
-}
-.links a{
-    text-decoration: none;
-    color: #2C2C2E;
-    padding-inline: 10px;
-    padding-block: 5px;
-    /* margin-inline: 2px; */
-    transition: 0.45s;
-}
-.links li{
-    list-style-type: none;
-    display: inline;
-}
-.links a:hover{
-    color: white;
-    background-color: #295fb7;
+.title {
+  display: inline;
+  padding: 20px;
+  color: rgba(41, 95, 183, 1);
+  padding: 0%;
+  margin: 0;
+  padding-inline-start: 20px;
 }
 
-.sign{
-    margin-block: auto;
+ul.links {
+  padding: 0;
+  margin: 0%;
 }
-.sign button{
-    /* margin-inline: 5px; */
-    border: transparent;
-    padding: 10px;
+.nlink {
+  margin-block: auto;
 }
-.signup{
-    background-color: transparent;
-    transition: 0.3s;
+.links a {
+  text-decoration: none;
+  color: #2c2c2e;
+  padding-inline: 10px;
+  padding-block: 5px;
+  /* margin-inline: 2px; */
+  transition: 0.45s;
 }
-.signup:hover{
-    color: white;
-    background-color: #295fb7c1;
+.links li {
+  list-style-type: none;
+  display: inline;
 }
-.signin{
-    color: white;
-    background-color: #295FB7;
-    transition: 0.3s;
+.links a:hover {
+  color: white;
+  background-color: #295fb7;
 }
-.signin:hover{
-    color: white;
-    background-color: #295fb7ce;
+
+.sign {
+  margin-block: auto;
+}
+.sign button {
+  /* margin-inline: 5px; */
+  border: transparent;
+  padding: 10px;
+}
+.signup {
+  background-color: transparent;
+  transition: 0.3s;
+}
+.signup:hover {
+  color: white;
+  background-color: #295fb7c1;
+}
+.signin {
+  color: white;
+  background-color: #295fb7;
+  transition: 0.3s;
+}
+.signin:hover {
+  color: white;
+  background-color: #295fb7ce;
 }
