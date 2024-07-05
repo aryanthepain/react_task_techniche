@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 import "./sale.css";
 
@@ -30,6 +30,9 @@ const Sale = () => {
       <p className="sasub">
         Get your dream property right now and get best seller
       </p>
+
+      {error && <div>{error}</div>}
+      {isPending && <div>Loading data...</div>}
 
       {!isPending && (
         <div>
