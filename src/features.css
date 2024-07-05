@@ -1,0 +1,30 @@
+.feature {
+  background-color: #ecf4fd;
+  padding-block: 15px;
+  margin-block: 15px;
+}
+.fhead {
+  display: flex;
+  justify-content: space-around;
+}
+.ffeature {
+  color: #2455a9;
+  font-weight: 600;
+  font-size: 30px;
+}
+.fallbtn {
+  margin-block: auto;
+  padding: 5px;
+  background-color: #2455a9;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.fallbtn:hover {
+  background-color: #2455a9ce;
+}
+.fmfpic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
