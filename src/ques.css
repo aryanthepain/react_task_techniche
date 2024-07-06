@@ -95,3 +95,42 @@
   padding-block: 10px;
   border: 0;
 }
+
+/* responsiveness */
+@media only screen and (max-width: 620px) {
+  .quescontainer {
+    flex-direction: column;
+  }
+  .quesform {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .qttitle {
+    font-size: 130%;
+  }
+  .qtctitle {
+    font-size: 110%;
+  }
+  .quescontainer {
+    padding-inline: 2px;
+  }
+}
+@media only screen and (max-width: 260px) {
+  ul.qtccon {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 230px) {
+  .qtcclink {
+    font-size: 80%;
+  }
+  .qtccl3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .qftitle {
+    font-size: large;
+  }
+}
