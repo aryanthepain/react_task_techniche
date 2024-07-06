@@ -43,7 +43,8 @@
   padding-block: 50px;
   color: transparent;
 }
-.fmfdetails:hover {
+.fmfdetails:hover,
+#fmfdeets2 {
   color: white;
   display: block;
   background-color: rgba(0, 0, 0, 0.268);
@@ -51,7 +52,8 @@
 .fmfdlink {
   color: transparent;
 }
-.fmfdetails:hover .fmfdlink {
+/* prettier-ignore */
+.fmfdetails:hover .fmfdlink, #fmfbtn2 {
   color: white;
   background-color: #2455a9;
   text-decoration: none;
@@ -63,6 +65,8 @@
 .fmfdetails > a.fmfdlink:hover {
   background-color: #4f78be;
 }
+
+/* scroll buttons */
 .fmbtns {
   margin-block: 20px;
 }
@@ -78,4 +82,12 @@
 }
 .fmbtn:hover {
   background-color: #2455a9ce;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 600px) {
+  /* prettier-ignore */
+  #fmfpic1, #fmfpic3 {
+    display: none;
+  }
 }

@@ -44,9 +44,9 @@ const Features = () => {
   useEffect(() => {
     if (fulldata) {
       // prettier-ignore
-      document.getElementById("fmfpic1").style.backgroundImage = `url(${data[index].images[1]})`;
+      document.getElementById("fmfpic1").style.backgroundImage = `url(${data[index].images[2]})`;
       // prettier-ignore
-      document.getElementById("fmfpic2").style.backgroundImage = `url(${data[index].images[2]})`;
+      document.getElementById("fmfpic2").style.backgroundImage = `url(${data[index].images[1]})`;
       // prettier-ignore
       document.getElementById("fmfpic3").style.backgroundImage = `url(${data[index].images[3]})`;
     }
@@ -66,7 +66,7 @@ const Features = () => {
             <div className="fmflex">
               <div className="fmfpic" id="fmfpic1">
                 <div className="fmfdetails">
-                  <h2 className="fmfdtitle">{data[index].feature1}</h2>
+                  <h2 className="fmfdtitle">{data[index].feature2}</h2>
                   <h3 className="fmfdtype">{data[index].type}</h3>
                   <p className="fmfdprice">INR {data[index].price}</p>
                   <Link to={"property/" + data[index].id} className="fmfdlink">
@@ -75,11 +75,12 @@ const Features = () => {
                 </div>
               </div>
               <div className="fmfpic" id="fmfpic2">
-                <div className="fmfdetails">
-                  <h2 className="fmfdtitle">{data[index].feature2}</h2>
+                <div className="fmfdetails" id="fmfdeets2">
+                  <h2 className="fmfdtitle">{data[index].feature1}</h2>
                   <h3 className="fmfdtype">{data[index].type}</h3>
                   <p className="fmfdprice">INR {data[index].price}</p>
-                  <Link to={"property/" + data[index].id} className="fmfdlink">
+                  {/* prettier-ignore */}
+                  <Link to={"property/" + data[index].id} className="fmfdlink" id="fmfbtn2">
                     VIEW
                   </Link>
                 </div>
