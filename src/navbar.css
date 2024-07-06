@@ -46,6 +46,9 @@ ul.links {
   color: white;
   background-color: #295fb7;
 }
+#resnlink {
+  display: none;
+}
 
 .sign {
   margin-block: auto;
@@ -71,4 +74,67 @@ ul.links {
 .signin:hover {
   color: white;
   background-color: #295fb7ce;
+}
+
+/* responsive */
+@media only screen and (max-width: 700px) {
+  .navbar {
+    position: static;
+    flex-wrap: wrap;
+  }
+  .nlink {
+    display: none;
+  }
+  #resnlink {
+    display: block;
+    margin-top: 20px;
+  }
+  .navbar {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nlink {
+    display: block;
+    margin-block: 20px;
+  }
+  .links li {
+    /* display: block; */
+    text-align: center;
+  }
+  #resnlink {
+    display: none;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .links li {
+    display: block;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .navbar {
+    padding: 1%;
+  }
+  .sign {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    flex-direction: column;
+  }
+  .title {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 175px) {
+  .links li {
+    text-align: left;
+  }
+  .navbar {
+    align-items: start;
+  }
 }

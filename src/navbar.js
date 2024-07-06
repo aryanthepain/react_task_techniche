@@ -53,6 +53,31 @@ const Navbar = () => {
         <button className="signup">SIGN UP</button>
         <button className="signin">SIGN IN</button>
       </div>
+
+      <div className="nlink" id="resnlink">
+        <ul className="links">
+          <li>
+            <Link to="/" className="lhome" onClick={ScrollTop}>
+              HOME
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" className="lservices" onClick={ScrollTop}>
+              SERVICES
+            </Link>
+          </li>
+          <li>
+            <Link to="/sellorrent/sell" className="lsell" onClick={ScrollTop}>
+              SELL
+            </Link>
+          </li>
+          <li>
+            <Link to="/sellorrent/rent" className="lrent" onClick={ScrollTop}>
+              RENT
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
