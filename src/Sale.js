@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 import "./sale.css";
+import Features from "./Features";
 
 const Sale = () => {
   // prettier-ignore
   const {error, isPending, data: fulldata} = useFetch('http://localhost:8000/properties');
   const [index, setIndex] = useState(3);
   const [data, setData] = useState(null);
+  // const [fdata, setFData] = useState(null);
   const [tp, setTP] = useState(false);
 
   const ScrollTop = () => {
@@ -122,12 +124,14 @@ const Sale = () => {
             </div>
           )}
           {tp && data && (
-            <Link to={"property"} className="seeall" onClick={ScrollTop}>
+            <Link to={"properties"} className="seeall" onClick={ScrollTop}>
               See all....
             </Link>
           )}
         </div>
       )}
+
+      {!isPending && <Features />}
     </div>
   );
 };

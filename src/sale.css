@@ -85,4 +85,9 @@ h1 {
   text-align: center;
   text-decoration: underline;
   color: #2455a9;
+  margin-block: 10px;
+}
+.seeall {
+  margin-block: 15px;
+  display: block;
 }
