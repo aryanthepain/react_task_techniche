@@ -82,15 +82,17 @@ ul.links {
     position: static;
     flex-wrap: wrap;
   }
+  .navbar {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 653px) {
   .nlink {
     display: none;
   }
   #resnlink {
     display: block;
     margin-top: 20px;
-  }
-  .navbar {
-    padding-bottom: 20px;
   }
 }
 @media only screen and (max-width: 500px) {
