@@ -96,10 +96,10 @@ const Features = () => {
               </div>
             </div>
             <div className="fmbtns">
-              <button className="btnminus" onClick={HandleMinus}>
+              <button className="btnminus fmbtn" onClick={HandleMinus}>
                 {"<"}
               </button>
-              <button className="btnplus" onClick={HandlePlus}>
+              <button className="fmbtn btnplus" onClick={HandlePlus}>
                 {">"}
               </button>
             </div>
