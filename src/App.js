@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Sellform from "./Sellform";
 import Property from "./Property";
 import AllProperties from "./AllProperties";
+import Error from "./Error";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="property/:id" element={<Property />} />
             <Route path="properties" element={<AllProperties />} />
             <Route path="property" element={<AllProperties />} />
+            <Route path="property" element={<AllProperties />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </div>
         <Question />
