@@ -34,6 +34,9 @@
   padding-left: 8px;
   padding-right: 0;
   border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .sfinput {
   border: 0;
@@ -72,4 +75,47 @@
   border-color: black;
   background-color: #295fb799;
   color: black;
+}
+
+/* responsive */
+@media only screen and (max-width: 515px) {
+  .sform > div > div {
+    display: grid;
+    width: 100%;
+  }
+  div.sfsellrent > div {
+    display: flex;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .sellform {
+    padding: 0;
+  }
+  .sfsubmit {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .sfcontainer {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 275px) {
+  .sform > div > div {
+    margin-inline: 0;
+    border-radius: 0;
+  }
+  .resimg {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100vw;
+  }
+  .sfinput {
+    width: 100vw;
+  }
+  .sform > div > div {
+    padding-inline: 3px;
+  }
 }
