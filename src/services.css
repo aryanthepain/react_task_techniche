@@ -59,3 +59,14 @@
   background-color: #295fb7;
   border-radius: 100%;
 }
+
+/* responsive */
+@media only screen and (max-width: 650px) {
+  .soptions {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .sitem {
+    margin-block: 10px;
+  }
+}
