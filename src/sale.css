@@ -91,3 +91,15 @@ h1 {
   margin-block: 15px;
   display: block;
 }
+
+/* responsive */
+@media only screen and (max-width: 650px) {
+  .sagrid {
+    grid-template-columns: repeat(2, 48%);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .sagrid {
+    grid-template-columns: repeat(1, 96%);
+  }
+}
