@@ -89,3 +89,15 @@
 .hslogo > p {
   margin-block: 5px;
 }
+
+/* responsive */
+@media only screen and (max-width: 750px) {
+  .homecontainer {
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .htitle {
+    font-size: 30px;
+  }
+}
