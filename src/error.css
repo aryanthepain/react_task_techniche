@@ -7,4 +7,21 @@
 }
 .error {
   text-align: center;
+  padding: 20px;
+  padding-top: 0;
+}
+
+/* responsive */
+@media only screen and (max-width: 500px) {
+  .etitle {
+    font-size: 150%;
+  }
+  .epic {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .epic {
+    width: 100%;
+  }
 }
