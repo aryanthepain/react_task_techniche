@@ -176,7 +176,7 @@ const Sellform = () => {
               </label>
               <input
                 type="file"
-                className="sfuimg"
+                className="sfuimg resimg"
                 accept="image/*"
                 required
                 id="sfmimg"
@@ -240,7 +240,13 @@ const Sellform = () => {
                 required
                 onChange={(e) => setf1(e.target.value)}
               />
-              <input type="file" required accept="image/*" id="sfimg1" />
+              <input
+                type="file"
+                required
+                accept="image/*"
+                id="sfimg1"
+                className="resimg"
+              />
             </div>
 
             <div>
@@ -254,7 +260,13 @@ const Sellform = () => {
                 required
                 onChange={(e) => setf2(e.target.value)}
               />
-              <input type="file" required accept="image/*" id="sfimg2" />
+              <input
+                type="file"
+                required
+                accept="image/*"
+                id="sfimg2"
+                className="resimg"
+              />
             </div>
 
             <div>
@@ -268,7 +280,13 @@ const Sellform = () => {
                 required
                 onChange={(e) => setf3(e.target.value)}
               />
-              <input type="file" required accept="image/*" id="sfimg3" />
+              <input
+                type="file"
+                required
+                accept="image/*"
+                id="sfimg3"
+                className="resimg"
+              />
             </div>
           </div>
 
