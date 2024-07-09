@@ -7,28 +7,19 @@ const AllProperies = () => {
   // prettier-ignore
   const {error, isPending, data} = useFetch('http://localhost:8000/properties');
 
-  let mybutton = document.getElementById("myBtn");
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction();
-  };
-
+  window.addEventListener("scroll", scrollFunction);
   function scrollFunction() {
-    if (
-      document.body.scrollTop > 100 ||
-      document.documentElement.scrollTop > 100
-    ) {
-      mybutton.style.display = "block";
+    if (window.scrollY > 100) {
+      document.getElementById("myBtn").style.display = "block";
     } else {
-      mybutton.style.display = "none";
+      document.getElementById("myBtn").style.display = "none";
     }
   }
 
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
+  const topFunction = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  };
 
   return (
     <div className="sale">
