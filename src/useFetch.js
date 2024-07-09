@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
@@ -6,33 +7,27 @@ const useFetch = (url) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const abortCont = new AbortController();
+    const source = axios.CancelToken.source();
 
-    fetch(url, { signal: abortCont.signal })
+    axios
+      .get(url, { cancelToken: source.token })
       .then((res) => {
-        if (!res.ok) {
-          // error coming back from server
-          throw Error("could not fetch the data for that resource");
-        }
-        return res.json();
-      })
-      .then((data) => {
         setIsPending(false);
-        setData(data);
+        setData(res.data.posts);
         setError(null);
       })
       .catch((err) => {
-        if (err.name === "AbortError") {
-          console.log("fetch aborted");
+        if (axios.isCancel(err)) {
+          console.log("Request canceled", err.message);
         } else {
-          // auto catches network / connection error
           setIsPending(false);
           setError(err.message);
         }
       });
 
-    // abort the fetch
-    return () => abortCont.abort();
+    return () => {
+      source.cancel("Operation canceled by the user.");
+    };
   }, [url]);
 
   return { data, isPending, error };

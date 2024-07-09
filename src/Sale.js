@@ -18,7 +18,8 @@ const Sale = () => {
   };
 
   useEffect(() => {
-    if (fulldata) setData(fulldata.slice(0, index));
+    if (!isPending) setData(fulldata.slice(0, index));
+    console.log(fulldata);
 
     if (index >= 9) setTP(true);
   }, [index, fulldata]);

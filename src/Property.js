@@ -3,13 +3,20 @@ import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 import "./sale.css";
 import "./features.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { source } from "./source";
 
 const Property = () => {
   const { id } = useParams();
   // prettier-ignore
-  const { data: prop , error, isPending } = useFetch(source + id);
+  const { data , error, isPending } = useFetch(source);
+  const [prop, setProp] = useState(null);
+
+  useEffect(() => {
+    if (!isPending) setProp(data.find((post) => post.id === id));
+
+    if (!prop && !isPending) return <div>Post not found</div>;
+  }, [data]);
 
   // image function
   useEffect(() => {

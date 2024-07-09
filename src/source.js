@@ -1,2 +1,1 @@
-export const source =
-  "https://aryanthepain.github.io/data/properties.json/properties/";
+export const source = "https://aryanthepain.github.io/react-task-api/db.json";
