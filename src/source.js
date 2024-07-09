@@ -1,1 +1,2 @@
-export const source = "http://localhost:8000/properties/";
+export const source =
+  "https://aryanthepain.github.io/data/properties.json/properties/";
