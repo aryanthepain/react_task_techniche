@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position-y: center;
   padding-block: 5%;
+  z-index: 5;
 }
 
 .qtext {
@@ -60,6 +61,7 @@
   padding-block: 3%;
   display: flex;
   flex-direction: column;
+  z-index: 6;
 }
 .qftitle {
   color: #295fb7;
@@ -73,6 +75,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  z-index: 6;
 }
 
 .qfemail,

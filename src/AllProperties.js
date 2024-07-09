@@ -6,14 +6,21 @@ import { source } from "./source";
 const AllProperies = () => {
   // prettier-ignore
   const {error, isPending, data} = useFetch(source);
+  const myBtn = document.getElementById("myBtn");
 
   window.addEventListener("scroll", scrollFunction);
+
   function scrollFunction() {
     if (data) {
-      if (window.scrollY > 100) {
-        document.getElementById("myBtn").style.visibility = "visible";
+      const specificDiv = document.getElementById("buttondiv");
+      const myBtn = document.getElementById("myBtn");
+
+      const rect = specificDiv.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight && rect.bottom > 580) {
+        myBtn.style.visibility = "visible";
       } else {
-        document.getElementById("myBtn").style.visibility = "hidden";
+        myBtn.style.visibility = "hidden";
       }
     }
   }
@@ -24,7 +31,7 @@ const AllProperies = () => {
   };
 
   return (
-    <div className="sale">
+    <div className="sale" id="buttondiv">
       <button onClick={topFunction} id="myBtn" title="Go to top">
         Go to Top ^
       </button>
