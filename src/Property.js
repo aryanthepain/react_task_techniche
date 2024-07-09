@@ -4,11 +4,12 @@ import useFetch from "./useFetch";
 import "./sale.css";
 import "./features.css";
 import { useEffect } from "react";
+import { source } from "./source";
 
 const Property = () => {
   const { id } = useParams();
   // prettier-ignore
-  const { data: prop , error, isPending } = useFetch("http://localhost:8000/properties/" + id);
+  const { data: prop , error, isPending } = useFetch(source + id);
 
   // image function
   useEffect(() => {

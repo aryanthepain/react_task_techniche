@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 import "./sale.css";
 import Features from "./Features";
+import { source } from "./source";
 
 const Sale = () => {
   // prettier-ignore
-  const {error, isPending, data: fulldata} = useFetch('http://localhost:8000/properties');
+  const {error, isPending, data: fulldata} = useFetch(source);
   const [index, setIndex] = useState(3);
   const [data, setData] = useState(null);
   // const [fdata, setFData] = useState(null);

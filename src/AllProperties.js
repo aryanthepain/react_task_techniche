@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 import "./sale.css";
+import { source } from "./source";
 
 const AllProperies = () => {
   // prettier-ignore
-  const {error, isPending, data} = useFetch('http://localhost:8000/properties');
+  const {error, isPending, data} = useFetch(source);
 
   window.addEventListener("scroll", scrollFunction);
   function scrollFunction() {

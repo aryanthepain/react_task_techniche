@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./Sellform.css";
+import { source } from "./source";
 
 const Sellform = () => {
   const [isRent, SetIsRent] = useState(false);
@@ -59,7 +60,7 @@ const Sellform = () => {
     try {
       const base64Images = await Promise.all(imageInputs.map(readFileAsBase64));
 
-      const response = await fetch("http://localhost:8000/properties", {
+      const response = await fetch(source, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

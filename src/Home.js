@@ -1,5 +1,4 @@
 import "./Home.css";
-import Select from "react-select";
 import Services from "./Services";
 import Sale from "./Sale";
 

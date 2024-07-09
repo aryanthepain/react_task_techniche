@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useFetch from "./useFetch";
 import "./features.css";
+import { source } from "./source";
 
 const Features = () => {
   const [index, setIndex] = useState(0);
-  const { data: fulldata } = useFetch("http://localhost:8000/properties");
+  const { data: fulldata } = useFetch(source);
   const [data, setData] = useState(null);
   const [counter, setCounter] = useState(0);
 
