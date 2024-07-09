@@ -10,10 +10,12 @@ const AllProperies = () => {
 
   window.addEventListener("scroll", scrollFunction);
   function scrollFunction() {
-    if (window.scrollY > 100) {
-      document.getElementById("myBtn").style.visibility = "visible";
-    } else if (window.scrollY <= 100) {
-      document.getElementById("myBtn").style.visibility = "hidden";
+    if (data) {
+      if (window.scrollY > 100) {
+        document.getElementById("myBtn").style.visibility = "visible";
+      } else {
+        document.getElementById("myBtn").style.visibility = "hidden";
+      }
     }
   }
 
