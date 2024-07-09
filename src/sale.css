@@ -47,6 +47,7 @@ h1 {
 /* prettier-ignore */
 .sagprice, .sagadd, .sagrent {
   text-align: left;
+  text-transform: capitalize;
 }
 .sagrent {
   color: #ffac33;
@@ -125,4 +126,25 @@ h1 {
 
 #myBtn:hover {
   background-color: #2455a9ce;
+}
+
+/* each property component */
+.sagrid.prop {
+  background-color: #ecf4fd;
+  display: block;
+  margin-inline: 0;
+  padding-inline: 4%;
+  z-index: -1;
+}
+.sagdiv.prop:hover {
+  background-color: #ecf4fd;
+}
+/* prettier-ignore */
+.sagdiv.prop:hover .sagddetails, .sagdiv.prop:hover .sagadd,.sagdiv.prop:hover .sagprice{
+  filter: invert(0);
+}
+.prop.sagtitle {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-top: 0;
 }

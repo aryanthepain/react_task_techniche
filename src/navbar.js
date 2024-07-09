@@ -32,8 +32,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/services" className="lservices" onClick={ScrollTop}>
-              SERVICES
+            <Link to="/property" className="lservices" onClick={ScrollTop}>
+              PROPERTIES
             </Link>
           </li>
           <li>

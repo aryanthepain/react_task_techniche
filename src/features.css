@@ -90,4 +90,54 @@
   #fmfpic1, #fmfpic3 {
     display: none;
   }
+  .prop#fmfpic1,
+  .prop#fmfpic3 {
+    display: inline;
+  }
+  .prop.fmflex {
+    flex-direction: column;
+    padding: 0;
+  }
+  .fmfpic.prop {
+    margin-block: 10px;
+    background-size: auto;
+  }
+  .fmfdetails.prop {
+    padding: 0;
+  }
+  .fmfdtitle.prop {
+    display: none;
+  }
+  h2.propfeattitle {
+    display: block;
+  }
+  .fmfdetails.prop:hover {
+    background-color: unset;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .resfmfpic {
+    display: none;
+  }
+}
+.resfmfpic {
+  visibility: hidden;
+}
+.propfeattitle {
+  display: none;
+  text-transform: capitalize;
+}
+
+/* view button */
+#myBtn.fallbtn {
+  display: block;
+  position: static;
+  padding: 5px;
+  width: min-content;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.fallbtncont {
+  display: flex;
+  width: 100%;
 }
