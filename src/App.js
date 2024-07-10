@@ -17,11 +17,11 @@ function App() {
         <div className="content">
           <Routes>
             <Route index element={<Home />} />
+            <Route path="react_task_techniche" element={<Home />} />
             <Route path="services" element={<Services />} />
             <Route path="sellorrent/:sell" element={<Sellform />} />
             <Route path="property/:id" element={<Property />} />
             <Route path="properties" element={<AllProperties />} />
-            <Route path="property" element={<AllProperties />} />
             <Route path="property" element={<AllProperties />} />
             <Route path="*" element={<Error />} />
           </Routes>

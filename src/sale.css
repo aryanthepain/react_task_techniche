@@ -127,6 +127,9 @@ h1 {
 #myBtn:hover {
   background-color: #2455a9ce;
 }
+#myBtn.fallbtn {
+  display: block;
+}
 
 /* each property component */
 .sagrid.prop {

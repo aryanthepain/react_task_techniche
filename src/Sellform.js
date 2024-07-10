@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./Sellform.css";
 import { source } from "./source";
+import axios from "axios";
 
 const Sellform = () => {
   const [isRent, SetIsRent] = useState(false);
@@ -60,27 +61,21 @@ const Sellform = () => {
     try {
       const base64Images = await Promise.all(imageInputs.map(readFileAsBase64));
 
-      const response = await fetch(source, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          isRent,
-          address,
-          type,
-          price,
-          bed,
-          bath,
-          area,
-          feature1,
-          feature2,
-          feature3,
-          images: base64Images,
-        }),
+      const response = await axios.post(source, {
+        isRent,
+        address,
+        type,
+        price,
+        bed,
+        bath,
+        area,
+        feature1,
+        feature2,
+        feature3,
+        images: base64Images,
       });
 
-      if (!response.ok) {
+      if (response !== 200) {
         alert("Upload failed.");
       }
     } catch (error) {
@@ -92,6 +87,7 @@ const Sellform = () => {
 
   return (
     <div className="sellform">
+      <h1 className="sftitle">Under development</h1>
       {isRent && <h1 className="sftitle">RENT</h1>}
       {!isRent && <h1 className="sftitle">SELL</h1>}
       <div className="sfcontainer">

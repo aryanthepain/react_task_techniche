@@ -48,7 +48,7 @@ const Question = () => {
         </div>
       </div>
       <div className="quesform">
-        <p className="qftitle">Any Question?</p>
+        <p className="qftitle">Any Question?(to be deployed)</p>
         <form className="qform">
           <input
             type="email"

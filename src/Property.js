@@ -41,7 +41,7 @@ const Property = () => {
             {prop && (
               <div>
                 <div className="fallbtncont">
-                  <Link to={"/properties"} className="fallbtn" id="myBtn">
+                  <Link to={"properties"} className="fallbtn" id="myBtn">
                     VIEW ALL PROPETIES
                   </Link>
                 </div>

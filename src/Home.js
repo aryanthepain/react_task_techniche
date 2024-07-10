@@ -13,6 +13,9 @@ const Home = () => {
               Browse, explore, and find the perfect property with our innovative
               website. Seamlessly connect with sellers, agents, and a vibrant
               community of home seekers. Your dream home awaits!
+              <br />
+              <br />
+              Search function to be deployed
             </section>
 
             <div className="hform">
