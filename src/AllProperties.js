@@ -42,7 +42,7 @@ const AllProperies = () => {
               data.map((prop) => (
                 <div className="sagdiv" key={prop.id}>
                   {/* <div className="saglinkcont"> */}
-                  <Link to={`property/${prop.id}`} className="saglink">
+                  <Link to={prop.id} className="saglink">
                     <div className="sagimgdiv">
                       {/* prettier-ignore */}
                       <img src={prop.images[0]} alt={prop.type} className="sagdimg" />
