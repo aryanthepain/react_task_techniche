@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_task_techniche/static/css/main.4f5361c3.css",
-    "main.js": "/react_task_techniche/static/js/main.69ab3406.js",
+    "main.css": "/react_task_techniche/static/css/main.f3a806fa.css",
+    "main.js": "/react_task_techniche/static/js/main.596005ca.js",
     "static/media/r-architecture-KQPEhYweLrQ-unsplash 2.png": "/react_task_techniche/static/media/r-architecture-KQPEhYweLrQ-unsplash 2.4975b157f92db836be61.png",
     "static/media/home_bg.png": "/react_task_techniche/static/media/home_bg.c39922c67ae3f0a3d769.png",
     "static/media/error.jpg": "/react_task_techniche/static/media/error.13ef566e935e2c17da19.jpg",
@@ -12,11 +12,11 @@
     "static/media/location.svg": "/react_task_techniche/static/media/location.1d4c241db999588415fd.svg",
     "index.html": "/react_task_techniche/index.html",
     "static/media/mail.svg": "/react_task_techniche/static/media/mail.b06fc4f5903bf19e9240.svg",
-    "main.4f5361c3.css.map": "/react_task_techniche/static/css/main.4f5361c3.css.map",
-    "main.69ab3406.js.map": "/react_task_techniche/static/js/main.69ab3406.js.map"
+    "main.f3a806fa.css.map": "/react_task_techniche/static/css/main.f3a806fa.css.map",
+    "main.596005ca.js.map": "/react_task_techniche/static/js/main.596005ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f5361c3.css",
-    "static/js/main.69ab3406.js"
+    "static/css/main.f3a806fa.css",
+    "static/js/main.596005ca.js"
   ]
 }
