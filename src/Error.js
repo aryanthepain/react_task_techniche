@@ -10,7 +10,7 @@ const Error = () => {
         Requested page does not exist, there must be a mistake. Click on the
         link below to go back home.
       </p>
-      <Link to={"/"}>Go back to Home</Link>
+      <Link to="/">Go back to Home</Link>
       <div className="econt">
         <div>
           <img src={pic} alt="" className="epic" />

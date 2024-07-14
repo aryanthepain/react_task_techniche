@@ -11,16 +11,17 @@ const Property = () => {
   // prettier-ignore
   const { data , error, isPending } = useFetch(source);
   const [prop, setProp] = useState(null);
+  const [postError, setPostError] = useState(null);
 
   useEffect(() => {
     if (!isPending) setProp(data.find((post) => post.id === id));
 
-    if (!prop && !isPending) return <div>Post not found</div>;
-  }, [data]);
+    if (!prop && !isPending) setPostError("Post not found");
+  }, [isPending]);
 
   // image function
   useEffect(() => {
-    if (prop) {
+    if (prop && id && !isPending) {
       // prettier-ignore
       document.getElementById("fmfpic1").style.backgroundImage = `url(${prop.images[2]})`;
       // prettier-ignore
@@ -33,6 +34,7 @@ const Property = () => {
   return (
     <div className="sale">
       {error && <div>{error}</div>}
+      {postError && !isPending && !prop && <div>{postError}</div>}
       {isPending && <div>Loading data...</div>}
 
       {!isPending && (
@@ -41,7 +43,7 @@ const Property = () => {
             {prop && (
               <div>
                 <div className="fallbtncont">
-                  <Link to={"properties"} className="fallbtn" id="myBtn">
+                  <Link to={"/properties"} className="sallbtn">
                     VIEW ALL PROPETIES
                   </Link>
                 </div>

@@ -19,7 +19,7 @@ const Sale = () => {
 
   useEffect(() => {
     if (!isPending) setData(fulldata.slice(0, index));
-    console.log(fulldata);
+    // console.log(fulldata);
 
     if (index >= 9) setTP(true);
   }, [index, fulldata]);
@@ -45,7 +45,7 @@ const Sale = () => {
               data.map((prop) => (
                 <div className="sagdiv" key={prop.id}>
                   {/* <div className="saglinkcont"> */}
-                  <Link to={`property/${prop.id}`} className="saglink">
+                  <Link to={`/property/${prop.id}`} className="saglink">
                     <div className="sagimgdiv">
                       {/* prettier-ignore */}
                       <img src={prop.images[0]} alt={prop.type} className="sagdimg" />
@@ -126,7 +126,7 @@ const Sale = () => {
             </div>
           )}
           {tp && data && (
-            <Link to={"properties"} className="seeall" onClick={ScrollTop}>
+            <Link to={"/properties"} className="seeall" onClick={ScrollTop}>
               See all....
             </Link>
           )}

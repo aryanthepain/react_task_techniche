@@ -108,7 +108,7 @@ h1 {
 
 /* go to top button */
 #myBtn {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -127,9 +127,6 @@ h1 {
 #myBtn:hover {
   background-color: #2455a9ce;
 }
-#myBtn.fallbtn {
-  display: block;
-}
 
 /* each property component */
 .sagrid.prop {
@@ -142,6 +139,24 @@ h1 {
 .sagdiv.prop:hover {
   background-color: #ecf4fd;
 }
+.sallbtn {
+  display: block;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2455a9;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.sallbtn:hover {
+  background-color: #2455a9ce;
+}
+
 /* prettier-ignore */
 .sagdiv.prop:hover .sagddetails, .sagdiv.prop:hover .sagadd,.sagdiv.prop:hover .sagprice{
   filter: invert(0);

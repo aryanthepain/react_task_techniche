@@ -8,25 +8,16 @@ const AllProperies = () => {
   // prettier-ignore
   const {error, isPending, data} = useFetch(source);
 
-  window.addEventListener("scroll", scrollFunction);
-  function scrollFunction() {
-    if (window.scrollY > 100) {
-      document.getElementById("myBtn").style.visibility = "visible";
-    } else if (window.scrollY <= 100) {
-      document.getElementById("myBtn").style.visibility = "hidden";
-    }
-  }
-
   // When the user clicks on the button, scroll to the top of the document
   const topFunction = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="sale">
-      <button onClick={topFunction} id="myBtn" title="Go to top">
+    <div className="sale" id="scrollbtn">
+      {/* <button onClick={topFunction} id="myBtn" title="Go to top">
         Go to Top ^
-      </button>
+      </button> */}
       <h1 className="satitle">Best Collection On Sale</h1>
       <p className="sasub">
         Get your dream property right now and get best seller
@@ -42,7 +33,7 @@ const AllProperies = () => {
               data.map((prop) => (
                 <div className="sagdiv" key={prop.id}>
                   {/* <div className="saglinkcont"> */}
-                  <Link to={prop.id} className="saglink">
+                  <Link to={`/property/${prop.id}`} className="saglink">
                     <div className="sagimgdiv">
                       {/* prettier-ignore */}
                       <img src={prop.images[0]} alt={prop.type} className="sagdimg" />

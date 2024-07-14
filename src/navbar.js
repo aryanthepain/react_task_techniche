@@ -32,17 +32,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="property" className="lservices" onClick={ScrollTop}>
+            <Link to="/properties" className="lservices" onClick={ScrollTop}>
               PROPERTIES
             </Link>
           </li>
           <li>
-            <Link to="sellorrent/sell" className="lsell" onClick={ScrollTop}>
+            <Link to="/sellorrent/sell" className="lsell" onClick={ScrollTop}>
               SELL
             </Link>
           </li>
           <li>
-            <Link to="sellorrent/rent" className="lrent" onClick={ScrollTop}>
+            <Link to="/sellorrent/rent" className="lrent" onClick={ScrollTop}>
               RENT
             </Link>
           </li>
@@ -62,17 +62,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="property" className="lservices" onClick={ScrollTop}>
+            <Link to="/properties" className="lservices" onClick={ScrollTop}>
               PROPERTIES
             </Link>
           </li>
           <li>
-            <Link to="sellorrent/sell" className="lsell" onClick={ScrollTop}>
+            <Link to="/sellorrent/sell" className="lsell" onClick={ScrollTop}>
               SELL
             </Link>
           </li>
           <li>
-            <Link to="sellorrent/rent" className="lrent" onClick={ScrollTop}>
+            <Link to="/sellorrent/rent" className="lrent" onClick={ScrollTop}>
               RENT
             </Link>
           </li>

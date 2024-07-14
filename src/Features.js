@@ -59,7 +59,7 @@ const Features = () => {
         <div>
           <div className="fhead">
             <p className="ffeature">Feature</p>
-            <Link to={"properties"} className="fallbtn">
+            <Link to={"/properties"} className="fallbtn">
               VIEW ALL
             </Link>
           </div>
@@ -70,7 +70,7 @@ const Features = () => {
                   <h2 className="fmfdtitle">{data[index].feature2}</h2>
                   <h3 className="fmfdtype">{data[index].type}</h3>
                   <p className="fmfdprice">INR {data[index].price}</p>
-                  <Link to={"property/" + data[index].id} className="fmfdlink">
+                  <Link to={"/property/" + data[index].id} className="fmfdlink">
                     VIEW
                   </Link>
                 </div>
@@ -81,7 +81,7 @@ const Features = () => {
                   <h3 className="fmfdtype">{data[index].type}</h3>
                   <p className="fmfdprice">INR {data[index].price}</p>
                   {/* prettier-ignore */}
-                  <Link to={"property/" + data[index].id} className="fmfdlink" id="fmfbtn2">
+                  <Link to={"/property/" + data[index].id} className="fmfdlink" id="fmfbtn2">
                     VIEW
                   </Link>
                 </div>
@@ -91,7 +91,7 @@ const Features = () => {
                   <h2 className="fmfdtitle">{data[index].feature3}</h2>
                   <h3 className="fmfdtype">{data[index].type}</h3>
                   <p className="fmfdprice">INR {data[index].price}</p>
-                  <Link to={"property/" + data[index].id} className="fmfdlink">
+                  <Link to={"/property/" + data[index].id} className="fmfdlink">
                     VIEW
                   </Link>
                 </div>
