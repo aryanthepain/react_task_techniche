@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reac_task_techniche/static/css/main.a6d6621e.css",
-    "main.js": "/reac_task_techniche/static/js/main.742240e2.js",
+    "main.js": "/reac_task_techniche/static/js/main.59313498.js",
     "static/media/r-architecture-KQPEhYweLrQ-unsplash 2.png": "/reac_task_techniche/static/media/r-architecture-KQPEhYweLrQ-unsplash 2.4975b157f92db836be61.png",
     "static/media/home_bg.png": "/reac_task_techniche/static/media/home_bg.c39922c67ae3f0a3d769.png",
     "static/media/error.jpg": "/reac_task_techniche/static/media/error.13ef566e935e2c17da19.jpg",
@@ -13,10 +13,10 @@
     "index.html": "/reac_task_techniche/index.html",
     "static/media/mail.svg": "/reac_task_techniche/static/media/mail.b06fc4f5903bf19e9240.svg",
     "main.a6d6621e.css.map": "/reac_task_techniche/static/css/main.a6d6621e.css.map",
-    "main.742240e2.js.map": "/reac_task_techniche/static/js/main.742240e2.js.map"
+    "main.59313498.js.map": "/reac_task_techniche/static/js/main.59313498.js.map"
   },
   "entrypoints": [
     "static/css/main.a6d6621e.css",
-    "static/js/main.742240e2.js"
+    "static/js/main.59313498.js"
   ]
 }
